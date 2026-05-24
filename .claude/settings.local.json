@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p D:/git/my-blog/.claude/plans)",
+      "Read(//d/git/**)",
+      "Bash(npx create-next-app@latest my-blog --typescript --tailwind --eslint --app --src=no --import-alias=\"@/*\" --use-npm)"
+    ]
+  }
+}
