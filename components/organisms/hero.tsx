@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { DemoPanel } from "@/components/organisms/demo-panel";
 import { useReducedMotion } from "@/hooks/use-reduced-motion";
 
-function Hero() {
+function Hero({ onConsult }: { onConsult: () => void }) {
   const reducedMotion = useReducedMotion();
 
   return (
