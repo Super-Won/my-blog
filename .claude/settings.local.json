@@ -3,7 +3,21 @@
     "allow": [
       "Bash(mkdir -p D:/git/my-blog/.claude/plans)",
       "Read(//d/git/**)",
-      "Bash(npx create-next-app@latest my-blog --typescript --tailwind --eslint --app --src=no --import-alias=\"@/*\" --use-npm)"
+      "Bash(npx create-next-app@latest my-blog --typescript --tailwind --eslint --app --src=no --import-alias=\"@/*\" --use-npm)",
+      "Bash(npm install *)",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); console.log\\(Object.keys\\(m\\).filter\\(k => k.match\\(/twitter|youtube|github|discord|message|mail|book|users|file/i\\)\\).join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); const names = Object.keys\\(m\\).filter\\(k => /github|youtube|twitter|x$|discord|message/i.test\\(k\\) && !k.endsWith\\('Icon'\\)\\); console.log\\(names.join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); const names = Object.keys\\(m\\).filter\\(k => /^Github$|^Youtube$/i.test\\(k\\) && !k.endsWith\\('Icon'\\)\\); console.log\\(names.length ? names : 'Not found'\\); const all = Object.keys\\(m\\).filter\\(k => /^Ga|^Yo/i.test\\(k\\) && !k.endsWith\\('Icon'\\) && !k.startsWith\\('Lucide'\\)\\); console.log\\(all.join\\('\\\\n'\\)\\)\")",
+      "Bash(node -e \"const m = require\\('lucide-react'\\); const names = Object.keys\\(m\\).filter\\(k => k.startsWith\\('Lucide'\\) && /Github|Youtube|Twitter|Discord/i.test\\(k\\)\\); console.log\\(names.join\\('\\\\n'\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(npx tsc *)",
+      "Bash(npx next *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)",
+      "Bash(taskkill //PID 5544 //F)",
+      "Bash(curl -s http://localhost:3000)"
     ]
   }
 }
